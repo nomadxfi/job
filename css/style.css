@@ -1,0 +1,67 @@
+*, *:before, *:after {
+    list-style: none; }
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 16px;
+    background: #000000;
+    color: #FFFFFF;
+}
+.main-page__header {
+    display: flex;
+    flex-direction: column;
+}
+.header-logo {
+    display: flex;
+    justify-content: center;
+}
+.header-logo img{
+    width: 252px;
+    height: 108px;
+}
+.main-menu__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-menu__list li {
+    text-transform: uppercase;
+}
+.main-menu__list a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main-page__description {
+    display: flex;
+    flex-direction: column;
+}
+h1,
+h3 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.link {
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.photos-container {
+    display: flex;
+    justify-content: center;
+}
+.photos-container div {
+    width: 300px;
+    height: 425px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-size: 10px;
+    line-height: 13px;
+}
