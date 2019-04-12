@@ -1,6 +1,6 @@
 
 $fs : 16px;
-$ff : Helvetica, Arial, sans-serif;
+$ff : 'SF UI Display', 'Playfair Display SC';
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $bc: #000000;
@@ -17,6 +17,7 @@ body {
     background: $bc;
     color: $cl;
     height: 848px;
+    font-family: $ff;
 }
 .page-header,
 .page-footer {

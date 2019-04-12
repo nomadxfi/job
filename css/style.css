@@ -9,7 +9,8 @@ body {
   font-size: 16px;
   background: #000000;
   color: #FFFFFF;
-  height: 848px; }
+  height: 848px;
+  font-family: "SF UI Display", "Playfair Display SC"; }
 
 .page-header,
 .page-footer {
