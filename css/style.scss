@@ -1,0 +1,120 @@
+
+$fs : 16px;
+$ff : Helvetica, Arial, sans-serif;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$bc: #000000;
+$cl: #FFFFFF;
+
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 16px;
+    background: $bc;
+    color: $cl;
+    height: 848px;
+}
+.page-header,
+.page-footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+.main-page__header {
+    display: flex;
+    flex-direction: column;
+}
+.page-header__logo {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0;
+}
+.page-header__logo-image {
+    width: 252px;
+    height: 108px;
+}
+.main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 558px;
+}
+.main-menu__list li {
+    
+}
+.main-nav__list a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    margin: 0 auto;
+}
+.page-main__title {
+    display: block;
+    margin: 0 auto;
+}
+h1,
+h3 {
+    text-transform: uppercase;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+h3 {
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    font-size: 14px;
+    
+}
+.link {
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.photos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.photos-container__item {
+    
+}
+.photos-container__item:nth-child(5) {
+   
+}
+.photos-container__image {
+    padding-right: 10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-size: 10px;
+    line-height: 13px;
+}
+/*моб версия*/
+@media (min-width: 320px) {
+    body: 320px;
+    margin: 0 auto;
+}
+/*планшет */
+@media (min-width: 768px) {
+
+}
+/*десктоп */
+@media (min-width: 1088px) {
+
+}
