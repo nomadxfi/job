@@ -8,38 +8,57 @@
     <title>Main page</title>
 </head>
 <body>
-    <header class="main-page__header">
-        <a class="header-logo" href="#"><img src="img/logo.svg" alt="logo"></a>
-        <nav class="main-menu">
-            <ul class="main-menu__list">
-                <li>
-                    <a href="#">// About</a>
-                </li>
-                <li>
-                    <a href="#">// Galleries</a>
-                </li>
-                <li>
-                    <a href="#">// Videos</a>
-                </li>
-                <li>
-                    <a href="#">// Contact</a>
-                </li>
-                <li>...</li>
-            </ul>
+
+<header class="page-header">
+    <a class="page-header__logo" href="#"><img src="img/logo.svg" alt="logo" class="page-header__logo-image">
+    </a>
+    <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Open menu
+        </button><!--Кпопка для моб.меню-->
+        <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+                <a href="about.html">// About</a>
+            </li>
+            <li class="main-nav__list-item">
+                <a href="galleries.html">// Galleries</a>
+            </li>
+            <li class="main-nav__list-item">
+                <a href="videos.html">// Videos</a>
+            </li>
+            <li class="main-nav__list-item">
+                <a href="contact.html">// Contact</a>
+            </li>
+            <li class="main-nav__list-item">
+                <button>
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </button>
+            </li>
+        </ul>
     </header>
-<section class="main-page__description">
-    <h1>Actor&Model</h1>
-    <h3>Amateur</h2>
-    <a class="link" href="#">scroll right</a>
-    <div class="photos-container">
-        <div><img src="img/Rectangle 1.png" alt=""></div>
-        <div><img src="img/Rectangle 2.png" alt=""></div>
-        <div><img src="img/Rectangle 3.png" alt=""></div>
-        <div><img src="img/Rectangle 4.png" alt=""></div>
-        <div><img src="img/Rectangle 5.png" alt=""></div>
-    </div>
-</section>
-<footer class="main-page__footer">
+
+<main class="page-main">
+        <div class="page-main__title">
+            <h1>Actor & Model</h1>
+            <h3>Amateur</h2>
+        </div>
+        <a class="link" href="#">scroll right</a>
+        <div class="photos-container">
+            <div class="photos-container__item"><img src="img/Rectangle 1.png" alt="image" class="photos-container__image">
+            </div>
+            <div class="photos-container__item"><img src="img/Rectangle 2.png" alt="image" class="photos-container__image">
+            </div>
+            <div class="photos-container__item"><img src="img/Rectangle 3.png" alt="image" class="photos-container__image">
+            </div>
+            <div class="photos-container__item"><img src="img/Rectangle 4.png" alt="image" class="photos-container__image">
+            </div>
+            <div class="photos-container__item"><img src="img/Rectangle 5.png" alt="image" class="photos-container__image">
+            </div>
+        </div>
+</main>
+
+<footer class="page-footer">
     <p>&#9400;Sivenkov.org, Minsk, Belarus</p>
 </footer>
 

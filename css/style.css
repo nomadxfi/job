@@ -10,9 +10,10 @@ body {
     font-size: 16px;
     background: #000000;
     color: #FFFFFF;
+    height: 848px;
 }
-.main-page__header,
-.main-page__footer {
+.page-header,
+.page-footer {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
@@ -21,27 +22,30 @@ body {
     display: flex;
     flex-direction: column;
 }
-.header-logo {
+.page-header__logo {
     display: flex;
     justify-content: center;
     margin: 28px 0;
 }
-.header-logo img{
+.page-header__logo-image {
     width: 252px;
     height: 108px;
 }
-.main-menu__list {
+.main-nav__list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 558px;
 }
 .main-menu__list li {
-    text-transform: uppercase;
+    
 }
-.main-menu__list a {
+.main-nav__list a {
     color: #FFFFFF;
     text-decoration: none;
+    text-transform: uppercase;
 }
-.main-page__description {
+.page-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,12 +54,24 @@ body {
     flex-basis: auto;
     margin: 0 auto;
 }
+.page-main__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
 h1,
 h3 {
-    display: flex;
-    justify-content: center;
     text-transform: uppercase;
     margin: 0 auto;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+h3 {
+    
+    font-style: italic;
+    font-size: 14px;
+    
 }
 .link {
     display: flex;
@@ -66,13 +82,17 @@ h3 {
 .photos-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.photos-container div {
-    width: 300px;
-    height: 425px;
+.photos-container__item {
+    width: ;
+    height: ;
 }
-.photos-container div:nth-child(5) {
-    width: 255px;
+.photos-container__item:nth-child(5) {
+    width: ;
+}
+.photos-container__image {
+    padding-right: 10px;
 }
 footer {
     display: flex;
