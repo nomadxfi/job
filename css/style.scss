@@ -1,6 +1,6 @@
-
 $fs : 16px;
-$ff : 'SF UI Display', 'Playfair Display SC';
+$ff1 : 'SF UI Display';
+$ff2: 'Playfair Display SC';
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $bc: #000000;
@@ -17,7 +17,7 @@ body {
     background: $bc;
     color: $cl;
     height: 848px;
-    font-family: $ff;
+    font-family: $ff1;
 }
 .page-header,
 .page-footer {
@@ -65,19 +65,20 @@ body {
     display: block;
     margin: 0 auto;
 }
-h1,
-h3 {
+h1 {
     text-transform: uppercase;
     margin: 0 auto;
-    letter-spacing: 1px;
-    font-size: 19px;
+    letter-spacing: 1.3px;
+    font-size: 29px;
 }
+
 h3 {
     display: flex;
     justify-content: flex-end;
     font-style: italic;
-    font-size: 14px;
-    
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
 }
 .link {
     display: flex;
@@ -105,6 +106,69 @@ footer {
     height: 50px;
     font-size: 10px;
     line-height: 13px;
+}
+.aside-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    background: $bc;
+    width: 325px;
+}
+.aside-nav__list {
+    margin: 0 20px;
+    padding: 20px 0;
+}
+.aside-nav__list h3 {
+    font-family: $ff2;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-style: normal;
+}
+.aside-nav__list-item {
+    padding: 10px 0;
+    border-bottom: 0.25px solid #FFFFFF;
+}
+.aside-nav__list-item a {
+    color: #C8001E;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: $ff2;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+.aside-header__logo {
+    display: flex;
+    justify-content: center;
+}
+.aside-header__logo-image {
+    max-width: 110px;
+    width: 100%;
+    height: auto;
+}
+.newsletter {
+    max-width: 257px;
+    width: 100%;
+    height: auto;
+    background: $bc;
+    border: 0.25px solid #FFFFFF;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+.newsletter h3 {
+    font-family: $ff2;
+    justify-content: center;
+    font-style: normal;
+    font-size: 24px;
+}
+.newsletter p {
+    font-family: $ff1;
+    text-align: center;
+    font-size: 9px;
 }
 /*моб версия*/
 @media (min-width: 320px) {
