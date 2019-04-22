@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,65 +12,66 @@
     <link rel="stylesheet" href="css/fonts/SanFrancisco.css">
     <title>Main page</title>
 </head>
+
 <body>
 
-<header class="page-header">
-    <a class="page-header__logo" href="#"><img src="img/logo.svg" alt="logo" class="page-header__logo-image">
-    </a>
-    <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Open menu
-        </button><!--Кпопка для моб.меню-->
-        <ul class="main-nav__list">
-            <li class="main-nav__list-item">
-                <a href="about.html">// About</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="galleries.html">// Galleries</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="videos.html">// Videos</a>
-            </li>
-            <li class="main-nav__list-item">
-                <a href="contact.html">// Contact</a>
-            </li>
-            <li class="main-nav__list-item">
-                <button class="main-nav__extra-menu" type="button">
-                    <span>.</span>
-                    <span>.</span>
-                    <span>.</span>
-                </button>
-            </li>
-        </ul>
-    </nav>
+    <header class="page-header">
+        <a class="page-header__logo" href="#"><img src="img/logo.svg" alt="logo" class="page-header__logo-image">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Open menu
+            </button>
+            <!--Кпопка для моб.меню-->
+            <ul class="main-nav__list">
+                <li class="main-nav__list-item">
+                    <a href="html/about.html">// About</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="html/galleries.html">// Galleries</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="html/videos.html">// Videos</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <a href="html/contact.html">// Contact</a>
+                </li>
+                <li class="main-nav__list-item">
+                    <button class="main-nav__extra-menu" type="button">
+                        <span class="menu-btn"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
 
         <div class="aside-menu">
-            <a class="aside-header__logo" href="#"><img src="img/logo.svg" alt="logo" class="aside-header__logo-image"></a>
+            <a class="aside-header__logo" href="#"><img src="img/logo.svg" alt="logo"
+                    class="aside-header__logo-image"></a>
             <ul class="aside-nav__list">
                 <h3>Albums in galleries</h3>
-                    <li class="aside-nav__list-item">
-                        <a href="about.html">// Studio</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="galleries.html">// Commercial</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="videos.html">// Body</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="contact.html">// Outside</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="contact.html">// Fashion</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="contact.html">// Story</a>
-                    </li>
+                <li class="aside-nav__list-item">
+                    <a href="about.html">// Studio</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="galleries.html">// Commercial</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="videos.html">// Body</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="contact.html">// Outside</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="contact.html">// Fashion</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="contact.html">// Story</a>
+                </li>
             </ul>
 
             <div class="newsletter">
                 <h3>Newsletter</h3>
-                    <p>Sign up for one of our free newsletters to receive the latest news, commentary and fashion.</p>
-                <form action="subscribers">
+                <p>Sign up for one of our free newsletters to receive the latest news, commentary and fashion.</p>
+                <form action="subscribers" class="subscribers">
                     <input placeholder="Email address" type="email">
                     <button class="send" type="submit">Send</button>
                 </form>
@@ -77,48 +79,69 @@
 
             <ul class="aside-nav__list">
                 <h3>Videos in galleries</h3>
-                    <li class="aside-nav__list-item">
-                        <a href="about.html">// Fashion</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="galleries.html">// Fitness</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="videos.html">// Films</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="contact.html">// Story</a>
-                    </li>
-                    <li class="aside-nav__list-item">
-                        <a href="contact.html">// Backstage</a>
-                    </li>
+                <li class="aside-nav__list-item">
+                    <a href="about.html">// Fashion</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="galleries.html">// Fitness</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="videos.html">// Films</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="contact.html">// Story</a>
+                </li>
+                <li class="aside-nav__list-item">
+                    <a href="contact.html">// Backstage</a>
+                </li>
             </ul>
-        </div>
+
+                <div class="page-footer__social social">
+                    <b class="social__title">Privacy policy</b>
+                    <ul class="social__list">
+                      <li class="social__item">
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/"><img src="../Job/img/fb.svg" alt=""></a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link social__link--telegram" href="https://telegram.org/"><img src="../Job/img/tlg.svg" alt=""></a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link social__link--instagram" href="https://www.instagram.com/"><img src="../Job/img/inst.svg" alt=""></a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
     </header>
 
-<main class="page-main">
+    <main class="page-main">
         <div class="page-main__title">
             <h1>Actor & Model</h1>
             <h3>Amateur</h2>
         </div>
         <a class="link" href="#">scroll right</a>
         <div class="photos-container">
-            <div class="photos-container__item"><img src="img/Rectangle 1.png" alt="image" class="photos-container__image">
+            <div class="photos-container__item"><img src="img/Rectangle 1.png" alt="image"
+                    class="photos-container__image">
             </div>
-            <div class="photos-container__item"><img src="img/Rectangle 2.png" alt="image" class="photos-container__image">
+            <div class="photos-container__item"><img src="img/Rectangle 2.png" alt="image"
+                    class="photos-container__image">
             </div>
-            <div class="photos-container__item"><img src="img/Rectangle 3.png" alt="image" class="photos-container__image">
+            <div class="photos-container__item"><img src="img/Rectangle 3.png" alt="image"
+                    class="photos-container__image">
             </div>
-            <div class="photos-container__item"><img src="img/Rectangle 4.png" alt="image" class="photos-container__image">
+            <div class="photos-container__item"><img src="img/Rectangle 4.png" alt="image"
+                    class="photos-container__image">
             </div>
-            <div class="photos-container__item"><img src="img/Rectangle 5.png" alt="image" class="photos-container__image">
+            <div class="photos-container__item"><img src="img/Rectangle 5.png" alt="image"
+                    class="photos-container__image">
             </div>
         </div>
-</main>
+    </main>
 
-<footer class="page-footer">
-    <p>&#9400;Sivenkov.org, Minsk, Belarus</p>
-</footer>
+    <footer class="page-footer">
+        <p>&#9400;Sivenkov.org, Minsk, Belarus</p>
+    </footer>
 
 </body>
+
 </html>

@@ -134,24 +134,38 @@ footer {
   height: auto; }
 
 .newsletter {
-  max-width: 257px;
+  max-width: 285px;
   width: 100%;
   height: auto;
   background: #000000;
   border: 0.25px solid #FFFFFF;
   margin: 0 20px;
-  padding: 20px 0; }
+  padding: 40px 0; }
 
 .newsletter h3 {
   font-family: "Playfair Display SC";
   justify-content: center;
   font-style: normal;
-  font-size: 24px; }
+  font-size: 24px;
+  padding-bottom: 10px; }
 
 .newsletter p {
   font-family: "SF UI Display";
   text-align: center;
-  font-size: 9px; }
+  font-size: 9px;
+  padding-bottom: 20px; }
+
+.subscribers {
+  display: flex;
+  justify-content: space-evenly; }
+
+.send {
+  background-color: #C8001E;
+  width: 71px;
+  height: auto;
+  border: 1px solid #C8001E;
+  text-transform: uppercase;
+  color: #ffffff; }
 
 /*моб версия*/
 @media (min-width: 320px) {
@@ -159,5 +173,55 @@ footer {
   margin: 0 auto; }
 /*планшет */
 /*десктоп */
+.main-nav__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-nav__extra-menu {
+  display: block;
+  width: 50px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative; }
+
+.main-nav__extra-menu span,
+.main-nav__extra-menu span::before,
+.main-nav__extra-menu span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222222; }
+
+span::before,
+span::after {
+  content: '';
+  display: block;
+  transition: 0.5s; }
+
+span::before {
+  transform: translateY(-5px); }
+
+span::after {
+  transform: translateY(5px); }
+
+.page-footer__social social {
+  display: block; }
+
+.social__title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px; }
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

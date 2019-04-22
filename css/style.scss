@@ -9,6 +9,7 @@ $cl: #FFFFFF;
 html {
     height: 100%;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,39 +20,45 @@ body {
     height: 848px;
     font-family: $ff1;
 }
+
 .page-header,
 .page-footer {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
 }
+
 .main-page__header {
     display: flex;
     flex-direction: column;
 }
+
 .page-header__logo {
     display: flex;
     justify-content: center;
     margin: 28px 0;
 }
+
 .page-header__logo-image {
     width: 252px;
     height: 108px;
 }
+
 .main-nav__list {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 558px;
 }
-.main-menu__list li {
-    
-}
+
+.main-menu__list li {}
+
 .main-nav__list a {
     color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
 }
+
 .page-main {
     display: flex;
     flex-direction: column;
@@ -61,10 +68,12 @@ body {
     flex-basis: auto;
     margin: 0 auto;
 }
+
 .page-main__title {
     display: block;
     margin: 0 auto;
 }
+
 h1 {
     text-transform: uppercase;
     margin: 0 auto;
@@ -80,26 +89,28 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 1.3px;
 }
+
 .link {
     display: flex;
     justify-content: flex-end;
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .photos-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.photos-container__item {
-    
-}
-.photos-container__item:nth-child(5) {
-   
-}
+
+.photos-container__item {}
+
+.photos-container__item:nth-child(5) {}
+
 .photos-container__image {
     padding-right: 10px;
 }
+
 footer {
     display: flex;
     justify-content: center;
@@ -107,6 +118,7 @@ footer {
     font-size: 10px;
     line-height: 13px;
 }
+
 .aside-menu {
     display: flex;
     flex-direction: column;
@@ -118,10 +130,12 @@ footer {
     background: $bc;
     width: 325px;
 }
+
 .aside-nav__list {
     margin: 0 20px;
     padding: 20px 0;
 }
+
 .aside-nav__list h3 {
     font-family: $ff2;
     font-size: 23px;
@@ -129,10 +143,12 @@ footer {
     text-decoration: underline;
     font-style: normal;
 }
+
 .aside-nav__list-item {
     padding: 10px 0;
     border-bottom: 0.25px solid #FFFFFF;
 }
+
 .aside-nav__list-item a {
     color: #C8001E;
     font-weight: bold;
@@ -141,45 +157,127 @@ footer {
     font-size: 23px;
     text-transform: uppercase;
 }
+
 .aside-header__logo {
     display: flex;
     justify-content: center;
 }
+
 .aside-header__logo-image {
     max-width: 110px;
     width: 100%;
     height: auto;
 }
+
 .newsletter {
-    max-width: 257px;
+    max-width: 285px;
     width: 100%;
     height: auto;
     background: $bc;
     border: 0.25px solid #FFFFFF;
     margin: 0 20px;
-    padding: 20px 0;
+    padding: 40px 0;
 }
+
 .newsletter h3 {
     font-family: $ff2;
     justify-content: center;
     font-style: normal;
     font-size: 24px;
+    padding-bottom: 10px;
 }
+
 .newsletter p {
     font-family: $ff1;
     text-align: center;
     font-size: 9px;
+    padding-bottom: 20px;
 }
+
+.subscribers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.send {
+    background-color: #C8001E;
+    width: 71px;
+    height: auto;
+    border: 1px solid #C8001E;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
 /*моб версия*/
 @media (min-width: 320px) {
     body: 320px;
     margin: 0 auto;
 }
+
 /*планшет */
-@media (min-width: 768px) {
+@media (min-width: 768px) {}
 
-}
 /*десктоп */
-@media (min-width: 1088px) {
+@media (min-width: 1088px) {}
 
+.main-nav__list-item {
+    //height: 100vh;
+    //background-color: #29303a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav__extra-menu {
+    display: block;
+    width: 50px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.main-nav__extra-menu span,
+.main-nav__extra-menu span::before,
+.main-nav__extra-menu span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #222222;
+}
+
+span::before,
+span::after {
+    content: '';
+    display: block;
+    transition: 0.5s;
+}
+
+span::before {
+    transform: translateY(-5px);
+}
+
+span::after {
+    transform: translateY(5px);
+}
+
+.page-footer__social social {
+    display: block;
+}
+
+.social__title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin: 0 auto;
 }
