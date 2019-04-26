@@ -51,8 +51,6 @@ body {
     width: 558px;
 }
 
-.main-menu__list li {}
-
 .main-nav__list a {
     color: #FFFFFF;
     text-decoration: none;
@@ -96,16 +94,15 @@ h3 {
     color: #FFFFFF;
     text-decoration: none;
 }
+.main-nav__toggle {
+    display: none;
+}
 
 .photos-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.photos-container__item {}
-
-.photos-container__item:nth-child(5) {}
 
 .photos-container__image {
     padding-right: 10px;
@@ -280,4 +277,92 @@ span::after {
     justify-content: space-between;
     width: 120px;
     margin: 0 auto;
+}
+//меню-бургер//
+.burger-menu__button {
+    position: fixed;
+    //top: 10px;
+    //left: 10px;
+    z-index: 30;
+    //width: 80px;
+    //height: 80px;
+    border-radius: 50%;
+    background-color: #2a2a2a;
+    transition: 0.4s;
+}
+.burger-menu__button:hover .burger-menu__lines {
+    filter: opacity(0.4);
+}
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+}
+.burger-menu__lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.burger-menu__lines::before {
+    content: '';
+    top: -12px;
+}
+.burger-menu__lines::after {
+    content: '';
+    top: 12px;
+}
+.burger-menu_active .burger-menu__button,
+.burger-menu_active .burger-menu__lines {
+    background-color: transparent;
+}
+.burger-menu_active .burger-menu__lines::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+.burger-menu_active .burger-menu__lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.burger-menu__nav {
+    padding-top: 80px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: #2a2a2a;
+    overflow-y: auto;
+    left: -100%;
+    transition: 0.5s;
+}
+.burger-menu_active .burger-menu__nav {
+    left: 0;
+}
+.burger-menu__link {
+    padding: 30px;
+    font-family: sans-serif;
+    font-style: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.burger-menu__link:hover {
+    filter: brightness(0.7);
+}
+.burger-menu__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+.burger-menu_active .burger-menu__overlay {
+    display: block;
 }
