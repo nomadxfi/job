@@ -63,11 +63,11 @@ h1 {
 
 h3 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   font-style: italic;
   font-size: 24px;
   text-transform: uppercase;
-  letter-spacing: 1.3px; }
+  letter-spacing: 0.5px; }
 
 .link {
   display: flex;
@@ -93,10 +93,9 @@ footer {
   font-size: 10px;
   line-height: 13px; }
 
-.aside-menu {
+.burger-menu {
   display: flex;
   flex-direction: column;
-  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -104,34 +103,18 @@ footer {
   background: #000000;
   width: 325px; }
 
-.aside-nav__list {
-  margin: 0 20px;
-  padding: 20px 0; }
-
-.aside-nav__list h3 {
+.burger-menu h3 {
   font-family: "Playfair Display SC";
   font-size: 23px;
   text-transform: uppercase;
   text-decoration: underline;
   font-style: normal; }
 
-.aside-nav__list-item {
-  padding: 10px 0;
-  border-bottom: 0.25px solid #FFFFFF; }
-
-.aside-nav__list-item a {
-  color: #C8001E;
-  font-weight: bold;
-  text-decoration: none;
-  font-family: "Playfair Display SC";
-  font-size: 23px;
-  text-transform: uppercase; }
-
-.aside-header__logo {
+.burger-menu__logo {
   display: flex;
   justify-content: center; }
 
-.aside-header__logo-image {
+.burger-menu__logo-image {
   max-width: 110px;
   width: 100%;
   height: auto; }
@@ -176,44 +159,7 @@ footer {
   margin: 0 auto; }
 /*планшет */
 /*десктоп */
-.main-nav__list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.main-nav__extra-menu {
-  display: block;
-  width: 50px;
-  height: 40px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: relative; }
-
-.main-nav__extra-menu span,
-.main-nav__extra-menu span::before,
-.main-nav__extra-menu span::after {
-  position: absolute;
-  top: 50%;
-  margin-top: -1px;
-  left: 50%;
-  margin-left: -10px;
-  width: 20px;
-  height: 2px;
-  background-color: #222222; }
-
-span::before,
-span::after {
-  content: '';
-  display: block;
-  transition: 0.5s; }
-
-span::before {
-  transform: translateY(-5px); }
-
-span::after {
-  transform: translateY(5px); }
-
-.page-footer__social social {
+.burger-menu__social social {
   display: block; }
 
 .social__title {
@@ -228,7 +174,7 @@ span::after {
   margin: 0 auto; }
 
 .burger-menu__button {
-  position: fixed;
+  position: absolute;
   z-index: 30;
   border-radius: 50%;
   background-color: #2a2a2a;
@@ -241,8 +187,8 @@ span::after {
 .burger-menu__lines::after,
 .burger-menu__lines::before {
   position: absolute;
-  width: 40px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   background-color: #fff; }
 
 .burger-menu__lines {
@@ -252,11 +198,11 @@ span::after {
 
 .burger-menu__lines::before {
   content: '';
-  top: -12px; }
+  left: 10px; }
 
 .burger-menu__lines::after {
   content: '';
-  top: 12px; }
+  right: 10px; }
 
 .burger-menu_active .burger-menu__button,
 .burger-menu_active .burger-menu__lines {
@@ -271,13 +217,10 @@ span::after {
   transform: rotate(-45deg); }
 
 .burger-menu__nav {
-  padding-top: 80px;
-  position: fixed;
   z-index: 20;
   display: flex;
   flex-flow: column;
   height: 100%;
-  background-color: #2a2a2a;
   overflow-y: auto;
   left: -100%;
   transition: 0.5s; }
@@ -286,14 +229,13 @@ span::after {
   left: 0; }
 
 .burger-menu__link {
-  padding: 30px;
-  font-family: sans-serif;
-  font-style: 32px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  padding: 10px;
+  color: #C8001E;
   font-weight: bold;
-  color: #ffffff; }
+  text-decoration: none;
+  font-family: "Playfair Display SC";
+  font-size: 23px;
+  text-transform: uppercase; }
 
 .burger-menu__link:hover {
   filter: brightness(0.7); }
