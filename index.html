@@ -18,80 +18,82 @@
     <header class="page-header">
         <a class="page-header__logo" href="#"><img src="img/logo.svg" alt="logo" class="page-header__logo-image">
         </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Open menu
-            </button>
-            <!--Кпопка для моб.меню-->
-            <ul class="main-nav__list">
-                <li class="main-nav__list-item">
-                    <a href="html/about.html">// About</a>
-                </li>
-                <li class="main-nav__list-item">
-                    <a href="html/galleries.html">// Galleries</a>
-                </li>
-                <li class="main-nav__list-item">
-                    <a href="html/videos.html">// Videos</a>
-                </li>
-                <li class="main-nav__list-item">
-                    <a href="html/contact.html">// Contact</a>
-                </li>
+        <div>
+            <nav class="main-nav">
+                <!--Кпопка для моб.меню-->
+                <button class="main-nav__toggle" type="button">Open menu
+                </button>
+                <ul class="main-nav__list">
+                    <li class="main-nav__list-item">
+                        <a href="html/about.html">// About</a>
+                    </li>
+                    <li class="main-nav__list-item">
+                        <a href="html/galleries.html">// Galleries</a>
+                    </li>
+                    <li class="main-nav__list-item">
+                        <a href="html/videos.html">// Videos</a>
+                    </li>
+                    <li class="main-nav__list-item">
+                        <a href="html/contact.html">// Contact</a>
+                    </li>
+    
+                    <li class="main-nav__list-item">
+                        <a href="#" class="burger-menu__button">
+                            <span class="burger-menu__lines"></span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav> 
+        </div>
+        <div class="burger-menu">
+            <nav class="burger-menu__nav">
+                <a class="burger-menu__logo" href="#"><img src="img/logo.svg" alt="logo"
+                        class="burger-menu__logo-image"></a>
+                <h3>Albums in galleries</h3>
+                <a class="burger-menu__link" href="about.html">// Studio</a>
+                <a class="burger-menu__link" href="galleries.html">// Commercial</a>
+                <a class="burger-menu__link" href="videos.html">// Body</a>
+                <a class="burger-menu__link" href="contact.html">// Outside</a>
+                <a class="burger-menu__link" href="contact.html">// Fashion</a>
+                <a class="burger-menu__link" href="contact.html">// Story</a>
 
-                <li class="main-nav__list-item">
-                    <a href="#" class="burger-menu__button">
-                        <span class="burger-menu__lines"></span>
-                    </a>
-                </li>
-                <div class="burger-menu">
-                    <nav class="burger-menu__nav">
-                        <a class="burger-menu__logo" href="#"><img src="img/logo.svg" alt="logo"
-                                class="burger-menu__logo-image"></a>
-                        <h3>Albums in galleries</h3>
-                        <a class="burger-menu__link" href="about.html">// Studio</a>
-                        <a class="burger-menu__link" href="galleries.html">// Commercial</a>
-                        <a class="burger-menu__link" href="videos.html">// Body</a>
-                        <a class="burger-menu__link" href="contact.html">// Outside</a>
-                        <a class="burger-menu__link" href="contact.html">// Fashion</a>
-                        <a class="burger-menu__link" href="contact.html">// Story</a>
-        
-                        <div class="newsletter">
-                            <h3>Newsletter</h3>
-                            <p>Sign up for one of our free newsletters to receive the latest news, commentary
-                                and fashion.</p>
-                            <form action="subscribers" class="subscribers">
-                                <input placeholder="Email address" type="email">
-                                <button class="send" type="submit">Send</button>
-                            </form>
-                        </div>
-        
-                        <h3>Videos in galleries</h3>
-                        <a class="burger-menu__link" href="about.html">// Fashion</a>
-                        <a class="burger-menu__link" href="galleries.html">// Fitness</a>
-                        <a class="burger-menu__link" href="videos.html">// Films</a>
-                        <a class="burger-menu__link" href="contact.html">// Story</a>
-                        <a class="burger-menu__link" href="contact.html">// Backstage</a>
-        
-                        <div class="burger-menu__social social">
-                            <b class="social__title">Privacy policy</b>
-                            <ul class="social__list">
-                                <li class="social__item">
-                                    <a class="social__link social__link--facebook" href="https://www.facebook.com/"><img
-                                            src="../Job/img/fb.svg" alt=""></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--telegram" href="https://telegram.org/"><img
-                                            src="../Job/img/tlg.svg" alt=""></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link--instagram" href="https://www.instagram.com/"><img
-                                            src="../Job/img/inst.svg" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Sign up for one of our free newsletters to receive the latest news, commentary
+                        and fashion.</p>
+                    <form action="subscribers" class="subscribers">
+                        <input placeholder="Email address" type="email">
+                        <button class="send" type="submit">Send</button>
+                    </form>
                 </div>
-            </ul>
-        </nav>
-        
+
+                <h3>Videos in galleries</h3>
+                <a class="burger-menu__link" href="about.html">// Fashion</a>
+                <a class="burger-menu__link" href="galleries.html">// Fitness</a>
+                <a class="burger-menu__link" href="videos.html">// Films</a>
+                <a class="burger-menu__link" href="contact.html">// Story</a>
+                <a class="burger-menu__link" href="contact.html">// Backstage</a>
+
+                <div class="burger-menu__social social">
+                    <b class="social__title">Privacy policy</b>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--facebook" href="https://www.facebook.com/"><img
+                                    src="../Job/img/fb.svg" alt=""></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--telegram" href="https://telegram.org/"><img
+                                    src="../Job/img/tlg.svg" alt=""></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--instagram" href="https://www.instagram.com/"><img
+                                    src="../Job/img/inst.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
        
     </header>
 
