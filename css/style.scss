@@ -56,6 +56,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
+.main-nav__list-item {
+    display: flex;
+    justify-content: center;
+}
 
 .page-main {
     display: flex;
@@ -217,7 +221,7 @@ footer {
 }
 //меню-бургер//
 .burger-menu__button {
-    position: absolute;
+    //position: absolute;
     //top: 10px;
     //left: 10px;
     z-index: 30;

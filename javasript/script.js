@@ -1,6 +1,6 @@
 function burgerMenu(selector) {
     let menu = $(selector);
-    let button = menu.find('.burger-menu__button');
+    let button = $('.button-dots js-open-sidebar');
     let links = menu.find('.burger-menu__link');
     let overlay = menu.find('.burger-menu__overlay');
 

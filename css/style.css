@@ -42,6 +42,10 @@ body {
   text-decoration: none;
   text-transform: uppercase; }
 
+.main-nav__list-item {
+  display: flex;
+  justify-content: center; }
+
 .page-main {
   display: flex;
   flex-direction: column;
@@ -170,7 +174,6 @@ footer {
   margin: 0 auto; }
 
 .burger-menu__button {
-  position: absolute;
   z-index: 30;
   border-radius: 50%;
   background-color: #2a2a2a;
